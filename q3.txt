@@ -1,0 +1,2 @@
+1. Basictransform field is the best canditate to move out into a separate component type in an ECS setup because scale and position could be used for various types of game objects like the project1 where it was needed for objects to move around. 
+2. It means we have to render sprites in a certain order (drawing typically from back to front). For translucent sprites on top of each other, we control their draw order through depth value or another method so that the blending logic can be correct with the sprites behind them.
